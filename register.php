@@ -77,7 +77,9 @@ if(isset($message)){
 }
 
 ?>
-   
+<div class="bg">
+
+</div>
 <section class="form-container">
 
    <form action="" enctype="multipart/form-data" method="POST">

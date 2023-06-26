@@ -22,7 +22,7 @@ if(!isset($admin_id)){
    
    <link rel="stylesheet" href="css/components.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   <link rel="stylesheet" href="css/admin_style.css">
+   
 
 </head>
 <body>
@@ -30,5 +30,7 @@ if(!isset($admin_id)){
 <?php include 'admin_header.php'; ?>
 
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
