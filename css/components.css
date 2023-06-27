@@ -294,76 +294,14 @@ font-size: 16px;
    display: inline-block;
 }
 
-
-.header .flex .profile button{
-   width: 155px;
-   height: 155px;
-   font-size:30px;
-   color: #fff;
-   background: none;
-   border: none;
-   border-radius: 50%; 
-   position: relative;
-   z-index: 0;
-   transition: .3s;
-   cursor: pointer;
-}
-.header .flex .profile button:before{
-   content: "";
-  position: absolute;
-  inset: -8px;
-  padding: 10px;
-  border-radius: 50%; 
-  background: conic-gradient(
-        #ff53bb ,
-        #0000 30deg 120deg,
-        #00f8d3 150deg 180deg,
-        #0000 210deg 300deg,
-        #ff53bb 330deg
-    );
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: intersect
-}
-.header .flex .profile button:after{
-   content: "";
-  position: absolute;
-  inset: -100px;
-  background:
-    radial-gradient(200px at left  400px top 150px,#ff53bb 100%,#0000),
-    radial-gradient(200px at right 400px bottom 150px,#00f8d3 100%,#0000);
-  filter: blur(120px);
-  opacity: .5;
-}
-.header .flex .profile button:after,.header .flex .profile button:before{
-   transition:.5s, 99999s 99999s transform;
-}
-.header .flex .profile button:hover{
-   box-shadow: 0 0 0 1px #666;
-}
-.header .flex .profile button:hover:before,.header .flex .profile button:hover:after{
-   transform: rotate(36000deg);
-   transition: .5s,600s linear transform;
-}
-.header .flex .profile button:before{
-   background-color: #222;
-   border: 2px solid #333;
-}
-button>img{
-   border-radius: 50%;
-   left: -2px;
-   position: relative;
-   top: 2px;
-   width: 594px;
-   opacity:0.9;
+.header .flex .profile img{
    height: 15rem;
    width: 15rem;
-   margin-bottom: 5rem;
+   margin-bottom: 1rem;
    border-radius: 50%;
    object-fit: cover;
 }
+
 .header .flex .profile p{
    padding:.5rem 0;
    font-size: 2rem;
@@ -418,6 +356,59 @@ button>img{
 }
 
 
+.footer{
+   background-color: var(--white);
+}
+
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:2.5rem;
+   align-items: flex-start;
+}
+
+.footer .box-container .box h3{
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 2rem;
+   font-size: 2rem;
+}
+
+.footer .box-container .box a,
+.footer .box-container .box p{
+   display: block;
+   padding:1.3rem 0;
+   font-size: 1.6rem;
+   color:var(--light-color);
+}
+
+.footer .box-container .box a i,
+.footer .box-container .box p i{
+   color:var(--green);
+   padding-right: 1rem;
+}
+
+.footer .box-container .box a:hover{
+   text-decoration: underline;
+   color:var(--green);
+}
+
+.footer .credit{
+   margin-top: 2rem;
+   padding: 2rem 1.5rem;
+   padding-bottom: 2.5rem;
+   line-height: 1.5;
+   border-top: var(--border);
+   text-align: center;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.footer .credit span{
+   color:var(--green);
+}
+
+
 @media (max-width:991px){
 
    html{
@@ -425,12 +416,13 @@ button>img{
    }
    
 }
+
 @media (max-width:768px){
 
    #menu-btn{
       display: inline-block;
-      transition: .2s linear;
    }
+
    .header .flex .navbar{
       border-top: var(--border);
       border-bottom: var(--border);
@@ -447,9 +439,9 @@ button>img{
 
    .header .flex .navbar a{
       display: block;
-      margin:2rem; 
-       
+      margin:2rem;   
    }
+
    .update-profile form .flex{
       flex-wrap: wrap;
       gap:0;
@@ -460,6 +452,7 @@ button>img{
    }
 
 }
+
 @media (max-width:450px){
 
    html{
