@@ -111,6 +111,7 @@ if(isset($_POST['add_product'])){
                <option value="vegitables">Vegetables</option>
                <option value="fruits">Fruits</option>
                <option value="meat">Meat</option>
+               <option value="fish">Fish</option>
                <option value="grocery">Grocery</option>
                <option value="beverage">Beverage</option>
          </select>
