@@ -82,7 +82,17 @@ if(isset($_POST['add_product'])){
    
    <link rel="stylesheet" href="css/admin_style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   
+   <style>
+      .show-products .box-container .box .price{
+   position: absolute;
+   top:1rem; left:1rem;
+   padding:1rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--primaryColor);
+   border-radius: .5rem;
+}
+   </style>
 
 </head>
 <body>

@@ -99,7 +99,7 @@
    padding:1rem;
    font-size: 2rem;
    color:var(--white);
-   background-color: var(--primaryColor);
+   background-color: hsl(199,100%, 33%);
    border-radius: .5rem;
 }
 
@@ -140,15 +140,7 @@
    position: relative;
 }
 
-.show-products .box-container .box .price{
-   position: absolute;
-   top:1rem; left:1rem;
-   padding:1rem;
-   font-size: 2rem;
-   color:var(--white);
-   background-color: var(--red);
-   border-radius: .5rem;
-}
+
 
 .show-products .box-container .box img{
    width: 100%;
@@ -216,6 +208,33 @@
    font-size: 20px;
    
 }
+.messages .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   justify-content:center;
+}
+
+.messages .box-container .box{
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding:2rem;
+}
+
+.messages .box-container .box p{
+   line-height: 1.5;
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:black;
+}
+
+.messages .box-container .box p span{
+   color:var(--green);
+}
+
 
 
 
@@ -289,8 +308,14 @@
     border-radius: 50%;
     object-fit: cover;
  }
+ .header .flex .profile p{
+   padding-top: 20px;
+   padding:2rem 0;
+   font-size: 2rem;
+   color:var(--black);
+}
  
- 
+
  @media (max-width:768px){
 
     .add-products form .flex .inputBox{
