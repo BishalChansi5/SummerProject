@@ -17,7 +17,7 @@ if(isset($message)){
 
    <div class="flex">
       <img src="uploaded_img/logo.png" alt="image is not available">
-      <a href="home.php" class="logo">Ashish <span>SuperMart</span></a>
+      <!-- <a href="home.php" class="logo">Ashish <span>SuperMart</span></a> -->
 
       <nav class="navbar">
          <a href="home.php">Home</a>
@@ -31,6 +31,14 @@ if(isset($message)){
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="user-btn" class="fas fa-user"></div>
          <a href="search_page.php" class="fas fa-search"></a>
+         <?php
+            $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+            $count_cart_items->execute([$user_id]);
+            $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ?");
+            $count_wishlist_items->execute([$user_id]);
+         ?>
+         <a href="wishlist.php"><i class="fas fa-heart"></i><span>(<?= $count_wishlist_items->rowCount(); ?>)</span></a>
+         <a href="cart.php"><i class="fas fa-shopping-cart"></i><span>(<?= $count_cart_items->rowCount(); ?>)</span></a>
        </div>
       <div class="profile">
          <?php

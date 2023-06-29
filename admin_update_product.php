@@ -94,6 +94,7 @@ if(isset($_POST['update_product'])){
          <option value="vegitables">vegetables</option>
          <option value="fruits">fruits</option>
          <option value="meat">Meat</option>
+         <option value="fish">Fish</option>
          <option value="grocery">Grocery</option>
                <option value="beverage">Beverage</option>
       </select>

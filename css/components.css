@@ -267,7 +267,7 @@ font-size: 16px;
 
 .header .flex .icons > *{
    font-size: 2.5rem;
-   color:var(--black);
+   color:black;
    cursor: pointer;
    margin-left: 1.5rem;
 }
@@ -280,7 +280,7 @@ font-size: 16px;
 }
 .header .flex .icons a span,
 .header .flex .icons a i{
-   color:var(--light-color);
+   color:var(--green);
 }
 
 .header .flex .icons a:hover span,
