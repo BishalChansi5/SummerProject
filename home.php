@@ -53,17 +53,8 @@ if(isset($_POST['add_to_cart'])){
    $check_cart_numbers = $conn->prepare("SELECT * FROM `cart` WHERE name = ? AND id = ?");
    $check_cart_numbers->execute([$p_name, $pid]);
 
-   // $qty=$conn->prepare("SELECT qty FROM `products` WHERE  name= ?");
-   // $qty->execute([ $p_name]);
-   // echo '<p class="empty">'.$qty.'</p>';
-   // $u_qty=$qty-$p_qty;
 
-   // $update_qty = $conn->prepare("UPDATE `products` SET qty=? WHERE id = ?");
-   // $update_qty->execute([$u_qty,$pid]);
 
-   // if($u_qty < 1){
-   //    $message[] = 'Out of Stock';
-   // }
 
    if($check_cart_numbers->rowCount() > 0){
       $message[] = 'Already added to cart!';
@@ -97,7 +88,7 @@ if(isset($_POST['add_to_cart'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 <style>
-
+  
 </style>
 </head>
 <body>
