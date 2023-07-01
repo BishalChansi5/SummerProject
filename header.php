@@ -16,7 +16,8 @@ if(isset($message)){
 <header class="header">
 
    <div class="flex">
-      <img src="uploaded_img/logo.png" alt="image is not available">
+      <img src="uploaded_img/logo.png" alt="image is not available" style=" height:50px;
+ width: 130px;">
       <!-- <a href="home.php" class="logo">Ashish <span>SuperMart</span></a> -->
 
       <nav class="navbar">
